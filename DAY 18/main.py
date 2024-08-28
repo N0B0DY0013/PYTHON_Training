@@ -10,7 +10,11 @@ screen.setworldcoordinates(-1, -1, screen.window_width() - 1, screen.window_heig
 
 # maximize window
 screenTk = screen.getcanvas().winfo_toplevel()
-screenTk.attributes("-zoom", 1)
+
+try:
+    screenTk.attributes("-zoom", 1)
+except:
+    screenTk.attributes("-fullscreen", 1)
 
 screen.colormode(255)
 
