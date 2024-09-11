@@ -47,7 +47,6 @@ nato_dict = {}
 
 # for (index, row_data) in nato_alphabet.iterrows():
 #     nato_dict[row_data["letter"]] = row_data["code"]
-
 nato_dict = {row_data["letter"]:row_data["code"] for (index, row_data) in nato_alphabet.iterrows()}
 
 word = input(f"Please enter a word: ").upper()
