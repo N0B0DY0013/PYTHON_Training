@@ -66,7 +66,6 @@ def create_button(text, row_grid, col_grid, col_span = 1, btn_width = 0, btn_com
     return my_button
 
 
-
 my_window = Tk()
 my_window.title("Password Manager")
 my_window.config(padx = 50, pady = 50)
