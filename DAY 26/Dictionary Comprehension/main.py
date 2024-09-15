@@ -43,6 +43,7 @@ import pandas
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 nato_alphabet = pandas.read_csv("nato_phonetic_alphabet.csv", sep = ";")
+print(type(nato_alphabet))
 nato_dict = {}
 
 # for (index, row_data) in nato_alphabet.iterrows():
